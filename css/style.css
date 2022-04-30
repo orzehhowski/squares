@@ -1,0 +1,85 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #02002a;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sq-box {
+  height: 200px;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.square {
+  width: 42px;
+  height: 42px;
+  margin: 4px;
+  background-color: #3f3fbc;
+  -webkit-box-shadow: 0 0 20px royalblue;
+          box-shadow: 0 0 20px royalblue;
+  border-radius: 5px;
+}
+
+.one {
+  -webkit-animation: hiding 0.5s linear 0s infinite alternate;
+          animation: hiding 0.5s linear 0s infinite alternate;
+}
+
+.two {
+  -webkit-animation: hiding 0.5s linear 0.2s infinite alternate;
+          animation: hiding 0.5s linear 0.2s infinite alternate;
+}
+
+.three {
+  -webkit-animation: hiding 0.5s linear 0.4s infinite alternate;
+          animation: hiding 0.5s linear 0.4s infinite alternate;
+}
+
+.four {
+  -webkit-animation: hiding 0.5s linear 0.6s infinite alternate;
+          animation: hiding 0.5s linear 0.6s infinite alternate;
+}
+
+.five {
+  -webkit-animation: hiding 0.5s linear 0.8s infinite alternate;
+          animation: hiding 0.5s linear 0.8s infinite alternate;
+}
+
+@-webkit-keyframes hiding {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hiding {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin anim($duration, $delay) {
+    animation: hiding $duration linear $delay infinite alternate;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: rgb(2, 0, 42);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sq-box {
+    height: 200px;
+    width: 800px;
+    // background-color: #888;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 42px;
+    height: 42px;
+    margin: 4px;
+    // border: 2px solid black;
+    background-color: rgb(63, 63, 188);
+    box-shadow: 0 0 20px royalblue;
+    border-radius: 5px;
+    // animation: hiding 0.5s alternate infinite;
+}
+
+.one {
+    @include anim(0.5s, 0s);
+}
+
+.two {
+    @include anim(0.5s, 0.2s);
+}
+
+.three {
+    @include anim(0.5s, 0.4s);}
+
+.four {
+    @include anim(0.5s, 0.6s);}
+
+.five {
+    @include anim(0.5s, 0.8s);}
+
+@keyframes hiding {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }   
+}
