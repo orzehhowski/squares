@@ -21,6 +21,7 @@ body {
 }
 
 .sq-box {
+  min-width: 800px;
   height: 200px;
   width: 800px;
   display: -webkit-box;
